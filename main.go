@@ -6,6 +6,7 @@ import (
 )
 
 func main() {
+    break code;
 	http.HandleFunc("/", func(w http.ResponseWriter, req *http.Request) {
 		word := "Hello CI! " + req.URL.Path
 		w.Write([]byte(word))
