@@ -10,6 +10,6 @@ func main() {
 		word := "Hello CI! " + req.URL.Path
 		w.Write([]byte(word))
 	})
-test test
+
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
