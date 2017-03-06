@@ -16,6 +16,7 @@ FILES     := $$(find . -name '*.go' | grep -vE 'vendor')
 TARGET	  := "server"
 
 test:
+	echo "new test"
 	$(GOTEST) $(PACKAGES) -cover
 
 build:
